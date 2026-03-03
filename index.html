@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Site do Grêmio</title>
+    <title>Site do Flamengo</title>
 </head>
 <body>
     <header>
@@ -11,10 +11,10 @@
         <div id="navbar">
             
             <a href="https://gremio.net/home"> 
-                <img id="icon" src="assets/icon.svg" alt="Ícone do Grêmio">
+                <img id="icon" src="assets/icone.png" alt="Ícone do Grêmio">
             </a>
 
-            <h2> Site de Notícias do Grêmio</h2>
+            <h2> SITE DE NOTÍCIAS DO FLAMENGO</h2>
 
             <ul id="links">
                 <li>Arquivos</li>
@@ -26,20 +26,54 @@
     </header>
     <main>
 
+        <div class="barra-sticky">Exemplo de Sticky Bar - barra que gruda</div>
+
         <section class="noticias">
 
             <div class="noticia">
-                <img class="img_noticia" src="assets/n1.jpg" alt="Senhor Representante do Grêmio">
-                <h3>Grêmio sobe para a Série A</h3>
-                <p>Um milagre!</p>
+                <img class="img_noticia" src="assets/arrascaeta.avif" alt="Giorgian De Arrascaeta">
+                <h3>Flamengo vence o Madureira por 8 a 0</h3>
+                <p>Pedro faz 4 gols e o Flamengo está na final do Carioca</p>
             </div>
             
             <div class="noticia">
-                <img class="img_noticia" src="assets/n2.jpg" alt="Senhor Representante do Grêmio">
+                <img class="img_noticia" src="assets/n2.jpg" alt="Imagem">
                 <h3>Grêmio cai para a Série B</h3>
                 <p>Não estou suportando mais!</p>
             </div>
 
+        </section>
+
+        <section class="posicao">
+            <h2>Position: static</h2>
+            <div class="pos-box pos-static">
+            Sou uma static padrão. Valores de top e left não mudam minha posição.
+        </div>
+        </section>
+
+        <section class="posicao">
+            <h2>Position: relative</h2>
+
+            <div class="pos-box">Caixa normal</div>
+
+            <div class="pos-box pos relative">
+                Caixa anormal: ela se move, mas continua tendo espaço reservados
+            </div>
+
+            <div class="pos-box">Caixa normal</div>
+        </section>
+
+        <section class="posicao">
+            <h2>Position: absolute</h2>
+
+            <div class="pai">
+                Pai (relativo)
+                <div class="filho">Filho</div>
+            </div>
+
+            <p class="pos-texto">O filho não empurra nada, 
+                ele fica por cima, colado no pai.
+            </p>
         </section>
 
     </main>
